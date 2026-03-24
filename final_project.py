@@ -6,7 +6,7 @@
 
 # background that scrolls throughout run(stops when character is killed) Patricia
 
-#Base Dino, should be able to jump when space bar is hit (Carolina)
+# Base Dino, should be able to jump when space bar is hit (Carolina)
 
 # Powerups (Carolina)
 
@@ -14,7 +14,7 @@
 
 # Double score tokens (Carolina)
 
-# Rocket blaster 
+# Rocket blaster
 
 # Power Downs (Carolina)
 
@@ -29,3 +29,5 @@
 # Game over screen (Alex)
 
 # Finished Screen (Alex)
+
+# test

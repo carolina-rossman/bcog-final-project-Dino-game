@@ -1,5 +1,5 @@
-# Dino Dash ##
-Names and Parameters
+# Dino Dash 
+## Names and Parameters
        1.) Start Screen                      
        -The instructions                                          
        -The start button                        

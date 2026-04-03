@@ -98,9 +98,9 @@ As the background scrolls horizontally, obstacles appear that the users should a
 By pressing spacebar. Users can clear the obstacles as they appear.  
 As the user progresses through the game, the tempo gradually speeds up, and the difficulty increases as the background scrolls faster.  
 Throughout the game there will be a score counter that:  
-Shows how far the users has progressed/the distances the dino has traveled since the start of the game.  
-As well as how close the user is to escaping the corrupt test lab.  
-Then finally, after each attempt, we will gather the users highest distance traveled and display it as the highscore.   
+- Shows how far the users has progressed/the distances the dino has traveled since the start of the game.  
+- As well as how close the user is to escaping the corrupt test lab.  
+- Then finally, after each attempt, we will gather the users highest distance traveled and display it as the highscore.   
 
   
 To make the game more engaging we added various power-ups and power-downs.  

@@ -37,7 +37,7 @@ experience like no other, creating an addictive experience for all.
        At set distances a random power down will appear
       - Speed up:  
       (for a set amount of time, the speed is faster/the background is scrolling the fastest)
-      -Midget Dino: 
+      -Tiny Dino: 
        (Dino becomes smaller, making the jumps harder to clear for user)
       
        6.) Score Counters
@@ -115,7 +115,7 @@ The power-ups include:
   
 The power-downs include,  
 - Speed-up (the game speeds up, reaching the maximum speed for a set amount of time making it harder for users)  
-- Midget Dino (Shrinks the Dino, making the jumps harder.)
+- Tiny Dino (Shrinks the Dino, making the jumps harder.)
 
 
 Finally if the user hits the desired distance, to be determined, to escape the corrupt test lab the dino would have escaped.  

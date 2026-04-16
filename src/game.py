@@ -10,6 +10,11 @@ class Display():
     def load_dino(self): 
         self.dino = tk.PhotoImage(file = "../stimuli/dino.png")
 
+    def create_powerups(self): 
+        pass
+    def create_powerdowns(self):
+        pass
+
     def init_window(self): 
         pass
     def avoid_obstacles(self): 

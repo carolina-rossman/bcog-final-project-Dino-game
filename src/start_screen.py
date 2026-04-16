@@ -59,17 +59,10 @@ class Display():
         self.canvas.create_window(400, 440, window= go_button)
         self.canvas.create_window(400, 500, window=quit_button)
     def go(self):
-        frame_delay = 50
-        self.canvas.destroy()
-        self.action_canvas = tk.Canvas(self.root, width= self.screen_size_x, height=self.screen_size_y, bg="black" )
-        self.action_canvas.pack()
-        self.background = self.action_canvas.create_image(
-            self.screen_size_x //2, 
-            self.screen_size_y //2,
-            image = self.background_image
-        )
-        self.root.after (frame_delay)
-        instructions_screen.Display(self.root)
+        self.root.destroy()
+        new_root = tk.Tk()
+        instructions_screen.Display(new_root)
+        new_root.mainloop()
 
 def main(): 
     my_display = Display()

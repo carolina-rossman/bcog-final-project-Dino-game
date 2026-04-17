@@ -64,5 +64,6 @@ def main():
         scoreboard.draw_score_counter(meters,screen) #From Me! Importing the scoreboard
         clock.tick(80) # From pygames
         pygame.display.update()
-    
-main()
+
+if __name__ == "__main__":  
+    main()

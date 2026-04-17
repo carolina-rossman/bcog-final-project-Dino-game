@@ -7,23 +7,26 @@ import sys
 pygame.init()
 
 clock = pygame.time.Clock()
-screen = scrolling_background()
+screen = pygame.display.set_mode((800,600))
 pygame.display.set_caption("Jumping in PyGame")
 
-x_position, y_position = 400, 600 
+clock - pygame.time.Clock()
+
+x_position, y_position = 400, 500 
 jumping = False 
 
 y_gravity = 1
 jump_height = 20 
 y_velocity = jump_height
 
-standing_surface = pygame.transform.scale(pygame.image.load("../stimuli/dino.png"), (48, 64))
-jumping_surface = pygame.transform.scale(pygame.image.load("../stimuli/dino.png")(48, 64))
+standing_surface = pygame.transform.scale(pygame.image.load("../stimuli/dino1.png"), (48, 64))
+jumping_surface = pygame.transform.scale(pygame.image.load("../stimuli/dino1.png"), (48, 64))
 background = scrolling_background()
 
 mario_rect = standing_surface.get_rect(center =(x_position, y_position))
 
 while True:
+    screen.blit(background, (0,0))
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             pygame.quit()
@@ -44,10 +47,6 @@ while True:
     else: 
         mario_rect = standing_surface.get_rect(center = (x_position, y_position))
         screen.blit(standing_surface, mario_rect)
-
-
-    screen.blit(background, (0,0))
-    screen.blit(standing_surface, mario_rect)
 
     pygame.display.update()
     clock.tick(60)

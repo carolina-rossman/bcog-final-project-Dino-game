@@ -1,4 +1,5 @@
 import tkinter as tk
+import base_dino
 class Display(): 
     screen_size = (800, 600)
     def __init__(self, root):
@@ -46,21 +47,17 @@ class Display():
         self.canvas.create_window(400, 480, window= go_button)
     
     def go(self):
-        frame_delay = 50
-        self.canvas.destroy()
-        self.action_canvas = tk.Canvas(self.root, width= self.screen_size_x, height=self.screen_size_y, bg="black" )
-        self.action_canvas.pack()
-        self.background = self.action_canvas.create_image(
-            self.screen_size_x //2, 
-            self.screen_size_y //2,
-            image = self.background_image
-        )
-        self.root.after (frame_delay)
+        self.root.destroy()
+        base_dino.run_game()
+        new_root = tk.Tk()
+        base_dino.Display(new_root)
+        new_root.mainloop()
 
 
 def main(): 
-    my_display = Display()
-    my_display.root.mainloop()
+    root = tk.Tk()
+    Display(root)
+    root.mainloop()
 
 if __name__ == "__main__":
     main()

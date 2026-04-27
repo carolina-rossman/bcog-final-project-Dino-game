@@ -12,21 +12,12 @@ class Display():
         self.canvas = pygame.display.set_mode(self.screen_size)
         self.background_image = pygame.image.load("../stimuli/instructions_background.png")
         self.background_image = pygame.transform.scale(self.background_image, (self.screen_size))
-        self.start_button = pygame.Rect(300, 250, 200, 50)
-        self.quit_button = pygame.Rect(300, 350, 200, 50)
+        self.start_button = pygame.Rect(80, 500, 200, 50)
+        self.quit_button = pygame.Rect(520, 500, 200, 50)
         pygame.display.set_caption("Instructions Screen")
-        self.load_instructions()
-       
-    def load_instructions(self): 
-        with open ("../stimuli/instructions.txt", "r") as file: 
-            self.instructions = file.read()
-            
+                
     def init_window(self):
        self.canvas.blit(self.background_image, (0,0))
-       self.instructions_font = pygame.font.SysFont("Arial", 24)
-       instruction = self.instructions_font.render (self.instructions, True, (255, 255, 255))
-       instructions_rect = instruction.get_rect (center = (self.screen_size_x/2, 100))
-       self.canvas.blit (instruction, instructions_rect)
   
     def create_interface_buttons(self): 
         pygame.draw.rect(self.canvas, (0, 200, 0), self.start_button)
